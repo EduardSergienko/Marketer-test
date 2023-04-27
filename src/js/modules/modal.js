@@ -9,7 +9,7 @@ const formMessage = document.querySelector("#message");
 const body = document.body;
 openModal.addEventListener("click", toggleModal);
 closeModal.addEventListener("click", toggleModal);
-formSubmit.addEventListener("click", handleFormSubmit);
+formSubmit.addEventListener("submit", handleFormSubmit);
 modalBackdrop.addEventListener("click", handleBackdropClick);
 
 function toggleModal() {
@@ -22,7 +22,8 @@ function handleBackdropClick(e) {
     body.classList.toggle("disable-scroll");
   }
 }
-function handleFormSubmit() {
+function handleFormSubmit(e) {
+  e.preventDefault();
   modalBackdrop.classList.toggle("is-hidden");
   body.classList.toggle("disable-scroll");
   const queryString =
