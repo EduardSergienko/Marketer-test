@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <!-- connecting part of the code -->
-    @@include('./html/example.html')
-    <!-- the path to images begins with '@img/' -->
-    <img class="img" src="@img/gulp-2x.png" alt="" />
+    <main>@@include('./html/hero.html') @@include('./html/products.html')</main>
+    @@include('./html/footer.html') @@include('./html/modal.html')
+
     <script src="js/app.min.js"></script>
   </body>
 </html>

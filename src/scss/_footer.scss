@@ -1,0 +1,17 @@
+.footer {
+  padding: 25px 0;
+  border-top: 1px solid gray;
+}
+
+.footer__btn {
+  padding: 10px 30px;
+  color: #efe2e2;
+  background-color: chocolate;
+  border-radius: 10px;
+  margin: 0 auto;
+  transition: 250ms;
+  &:hover {
+    background-color: #efe2e2;
+    color: chocolate;
+  }
+}
