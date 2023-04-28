@@ -15,12 +15,14 @@
 
 .product-item {
   padding: 10px;
+  max-width: 330px;
+  width: 100%;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background-color: #8584843b;
 }
 .product-item__img-wrap {
   position: relative;
-  cursor: pointer;
+
   &:hover img {
     transition: 250ms;
     filter: brightness(50%);
@@ -42,7 +44,7 @@
   transition: 250ms;
   border: 1px solid white;
 }
-.product-item__description {
+.product-item__title {
   text-align: center;
   margin-top: 10px;
   color: #efe2e2;

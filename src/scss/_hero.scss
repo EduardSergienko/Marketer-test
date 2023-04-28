@@ -28,6 +28,7 @@
       url("../img/hero_img_desk_large.jpg");
   }
 }
+
 .hero__title {
   @media screen and (min-width: 768px) {
     text-align: center;
@@ -53,6 +54,7 @@
   border-radius: 10px;
   margin-top: 33px;
   transition: 250ms;
+  max-width: 120px;
   & p {
     font-size: 14px;
   }
