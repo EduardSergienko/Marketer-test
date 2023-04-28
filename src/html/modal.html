@@ -36,6 +36,10 @@
         placeholder="Name..."
         name="name"
         type="text"
+        required
+        minlength="7"
+        pattern="[a-zA-Z]+$"
+        title="Username should only contain letters of the Latin alphabet."
       />
 
       <input
@@ -44,6 +48,7 @@
         name="email"
         type="email"
         id="email"
+        required
       />
       <textarea
         placeholder="Message..."
